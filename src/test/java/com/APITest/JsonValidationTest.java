@@ -23,14 +23,14 @@ public class JsonValidationTest {
 	 System.out.println("Json path id is matched!");
 	  
 	  //validate firstName
-	 String firstName=res.jsonPath().getString("data.first_name");
+	  String firstName=res.jsonPath().getString("data.first_name");
 	  Assert.assertEquals(firstName,"Janet");
 	  System.out.println("FirstName is matched!");
 	  
 	  //validate text form Support object
 	  String text=res.jsonPath().getString("support.text");
 	  Assert.assertTrue(text.contains("social media"));
-	 System.out.println("Test Pass: "+text); 
+	  System.out.println("Test Pass: "+text); 
 	 
 	  
 	  
