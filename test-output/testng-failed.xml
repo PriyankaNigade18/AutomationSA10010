@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.APITest.WaysToCreatePayload_Post">
+      <class name="com.APIScenarios.Assignment2">
         <methods>
-          <include name="postUsingHashMap"/>
+          <include name="usingPojo"/>
         </methods>
-      </class> <!-- com.APITest.WaysToCreatePayload_Post -->
+      </class> <!-- com.APIScenarios.Assignment2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

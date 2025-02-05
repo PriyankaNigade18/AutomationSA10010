@@ -3,6 +3,9 @@ package com.APIScenarios;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.PojoTest.Data;
+import com.PojoTest.SingleObject;
+
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
@@ -45,18 +48,71 @@ public class Assignment2 {
 	  
  
 	  
-Response res=given()
+given()
        .header("Content-Type","application/json")
 	  .body(map)
-	  .when().post("https://api.restful-api.dev/objects");
+	  .when().post("https://api.restful-api.dev/objects")
+	  
+	  .then().body("data.CPUmodel",equalTo("Intel Core i9"));
 
-Assert.assertEquals(res.statusCode(),200,"status code does not match");
-System.out.println("status code is match");
-System.out.println( res.asPrettyString());
-
- res.then().log().body();
-
-//get the log
+//Assert.assertEquals(res.statusCode(),200,"status code does not match");
+//System.out.println("status code is match");
+//System.out.println( res.asPrettyString());
+//
+// res.then().log().body();
+ 
+ 	
 
   }
+  
+  @Test
+  public void usingPojo()
+  {
+	  //payload
+	  
+	   Data data=new Data();
+	   data.setYear(2019);
+	   data.setPrice(1849.99);
+	   data.setCpuModel("Intel Core i9");
+	   data.setHardDiskSize("1 TB");
+	   
+	  SingleObject obj=new SingleObject();
+	  obj.setName("Apple MacBook Pro 16");
+	  obj.setData(data);
+	  
+	given()
+      .header("Content-Type","application/json")
+	  .body(obj)
+	  .when().post("https://api.restful-api.dev/objects")
+	  
+//	  String act=res.jsonPath().getString("data.cpuModel");
+//	  
+//	  Assert.assertEquals(act, "Intel Core i9");
+	  
+	  .then().body("data.cpuModel",equalTo("Intel Core i9"))
+	  .body("data.hardDiskSize",equalTo("1 TB"))
+	  .log().body();
+	  
+	  
+	  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }
