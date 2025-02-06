@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-06T22:29:39 IST" name="Default suite" finished-at="2025-02-06T22:29:50 IST" duration-ms="10690">
+    <groups>
+    </groups>
+    <test started-at="2025-02-06T22:29:39 IST" name="Default test" finished-at="2025-02-06T22:29:50 IST" duration-ms="10690">
+      <class name="com.MobileAppScenario.MobileLocatorsDemo">
+        <test-method signature="testLocator()[pri:0, instance:com.MobileAppScenario.MobileLocatorsDemo@1af2d44a]" started-at="2025-02-06T22:29:39 IST" name="testLocator" finished-at="2025-02-06T22:29:50 IST" duration-ms="10623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLocator -->
+      </class> <!-- com.MobileAppScenario.MobileLocatorsDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
