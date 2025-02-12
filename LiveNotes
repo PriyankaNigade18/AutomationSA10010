@@ -123,7 +123,8 @@ Gestures Link
 =============
 https://github.com/appium/appium-uiautomator2-driver/blob/2d02006eaf1e5a62acfbc36a5bc5a9ea271cf7cd/docs/android-mobile-gestures.md
 
-
+//performance parameters for device
+https://appium.readthedocs.io/en/latest/en/commands/device/performance-data/get-performance-data/#get-performance-data
 
 
 

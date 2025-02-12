@@ -86,8 +86,45 @@ public class MobileUtility
 	}
 	
 	
+	public static void swipeLeftGesture(AppiumDriver driver,WebElement area)
+	{
+		driver.executeScript("mobile:swipeGesture",ImmutableMap.of(
+				  "elementId",((RemoteWebElement)area).getId(),
+				  "direction","left",
+				  "percent",1.0
+				  
+				  ));
+	}
 	
+	public static void swipeRightGesture(AppiumDriver driver,WebElement area)
+	{
+		driver.executeScript("mobile:swipeGesture",ImmutableMap.of(
+				  "elementId",((RemoteWebElement)area).getId(),
+				  "direction","right",
+				  "percent",1.0
+				  
+				  ));
+	}
 	
+	public static void swipeUpGesture(AppiumDriver driver,WebElement area)
+	{
+		driver.executeScript("mobile:swipeGesture",ImmutableMap.of(
+				  "elementId",((RemoteWebElement)area).getId(),
+				  "direction","up",
+				  "percent",1.0
+				  
+				  ));
+	}
+	
+	public static void swipeDownGesture(AppiumDriver driver,WebElement area)
+	{
+		driver.executeScript("mobile:swipeGesture",ImmutableMap.of(
+				  "elementId",((RemoteWebElement)area).getId(),
+				  "direction","down",
+				  "percent",1.0
+				  
+				  ));
+	}
 	
 	
 	

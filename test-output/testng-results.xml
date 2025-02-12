@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-07T22:43:58 IST" name="Default suite" finished-at="2025-02-07T22:44:12 IST" duration-ms="14186">
+  <suite started-at="2025-02-12T22:52:48 IST" name="Default suite" finished-at="2025-02-12T22:53:03 IST" duration-ms="15136">
     <groups>
     </groups>
-    <test started-at="2025-02-07T22:43:58 IST" name="Default test" finished-at="2025-02-07T22:44:12 IST" duration-ms="14186">
+    <test started-at="2025-02-12T22:52:48 IST" name="Default test" finished-at="2025-02-12T22:53:03 IST" duration-ms="15136">
       <class name="com.MobileAppScenario.DragGesture">
-        <test-method signature="testDragGesture()[pri:0, instance:com.MobileAppScenario.DragGesture@5acf93bb]" started-at="2025-02-07T22:43:58 IST" name="testDragGesture" finished-at="2025-02-07T22:44:12 IST" duration-ms="14110" status="PASS">
+        <test-method signature="testDragGesture()[pri:0, instance:com.MobileAppScenario.DragGesture@1af2d44a]" started-at="2025-02-12T22:52:48 IST" name="testDragGesture" finished-at="2025-02-12T22:53:03 IST" duration-ms="15075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDragGesture -->
