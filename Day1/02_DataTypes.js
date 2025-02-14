@@ -162,6 +162,12 @@ console.log(`person first name is: ${person.fname}`);
 
 
 
+let uname="Priyanka";
+
+console.log(`value is: ${uname}`);
+console.log("type of : "+typeof uname);
+//console.log("type of uname is: "+typeof +uname); wrong syntax
+
 
 
 
